@@ -3,11 +3,10 @@ import os
 import imutils as im
 
 modelo = 'fotos'
-ruta_1 = 'Facial_1'
+ruta_1 = 'Facial_1\Data'
 ruta_final = ruta_1 + '/' + modelo
 if not os.path.exists(ruta_final):
     os.makedirs(ruta_final)
-
 ruido = cv.CascadeClassifier('Cv\haarcascade_frontalface_default.xml')
 camara = cv.VideoCapture(1)
 id = 0
